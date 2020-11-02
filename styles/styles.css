@@ -1,3 +1,51 @@
-body{
-    background-color: aqua;
+*{
+    margin: 0;
+	padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.clear{clear: both;}
+
+header{
+    padding: 8px 0;
+}
+.logo{
+    font-family: 'Pacifico', cursive !important;
+    float: left;
+    color: #7FFFD4;
+}
+/* HEADER */
+
+nav.menu-desktop{
+    float: right;
+}
+nav.menu-desktop ul{
+    position: relative;
+    top: 8px;
+}
+nav.menu-desktop li{
+    padding: 0 10px;
+    font-weight: lighter;
+    display: inline-block;
+}
+nav.menu-desktop a{
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 23px;
+}
+
+nav.menu-desktop a:hover{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*******/
