@@ -12,6 +12,12 @@
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.w50{
+    width: 50%;
+    float: left;
+}
+.center{text-align: center;}
+
 .clear{clear: both;}
 
 header{
@@ -43,7 +49,7 @@ nav.menu-desktop li{
 nav.menu-desktop a{
     color: black;
     text-decoration: none;
-    transition: 0.5s;
+    transition: all 0.5s ease-out;
     font-size: 23px;
 }
 
@@ -63,8 +69,8 @@ section.main-bg{
     background-size: cover;
     background-position: center;
     text-align: center;
-
 }
+
 
 section.main-bg > .container{
     position: relative;
@@ -191,8 +197,129 @@ section.sobre-equipe > .container{
     font-weight: lighter;
 }
 
+.inscricao-texto{
+    font-weight: normal;
+    color: white;
+    font-size: 25px;
+    transition: all 0.2s ease-out
+    
+}
+
+.inscricao-texto:hover{
+    font-size: 32px;
+}
+
+section.inscricao{
+    background: #52aaa7;
+    padding: 20px 0;
+}
+
+.inscricao-form input[type=email]{
+    width: calc(100% - 120px);
+    height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+    
+}
+
+.inscricao-form input[type=email]::placeholder {
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
+
+.inscricao-form input[type=submit]{
+    width: 120px;
+    height: 40px;
+    background: #1d6c64;
+    border: 0px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+section.cards{
+    padding: 30px 0;
+}
+
+.card-single{
+    width: 33.3%;
+    float: left;
+    padding: 50px;
+}
+
+.card-single img {
+    width: 100%;
+    height: 220px;
+}
+
+.card-single h3{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.card-single p {
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+footer.footer1{
+    background: #52aaa7;
+    padding: 20px 0;
+    color: white;
+}
+
+footer.footer2{
+    background: #237a70;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+footer.footer1 h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+footer.footer1 p{
+    margin-top: 8px;
+    font-weight: lighter;
+}
+footer.footer1 a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+div.group-icons a{
+    font-size: 20px;
+    display: inline-block;
+    margin:15px 10px ;
+}
+
+.w33{
+    float: left;
+    width: 33.3%;
+}
+
+
+
 /*RESPONSIVIDADE*/
 @media screen and (max-width:700px){
+    .card-single {
+        width: 100%;
+    }
+
+    .w50,.w33{width: 100%; margin-bottom: 20px;}
+
+    footer.footer1{
+        text-align: center;
+    }
+
     .box-icone-single {
         width: 100%;
     }
@@ -202,5 +329,11 @@ section.sobre-equipe > .container{
     .sobre-container {
         width: 100%;
         margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .card-single {
+        padding: 10px;
     }
 }
