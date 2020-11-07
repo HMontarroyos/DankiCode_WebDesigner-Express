@@ -32,6 +32,47 @@ header{
 .logo:hover{
     color: #F5DEB3;
 }
+
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile h2{
+    cursor: pointer;
+    
+}
+
+nav.menu-mobile ul {
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 73px;
+    z-index: 999;
+    text-align: center;
+    
+}
+
+nav.menu-mobile li {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+    
+}
+
+nav.menu-mobile li:hover {
+    background: #F5DEB3; 
+}
+
+nav.menu-mobile li a {
+text-decoration: none;
+color: black;
+    
+}
+
 /* HEADER */
 
 nav.menu-desktop{
@@ -230,7 +271,6 @@ section.inscricao{
     font-family: 'Open Sans Condensed', sans-serif !important;
 }
 
-
 .inscricao-form input[type=submit]{
     width: 120px;
     height: 40px;
@@ -307,9 +347,13 @@ div.group-icons a{
 }
 
 
-
 /*RESPONSIVIDADE*/
 @media screen and (max-width:700px){
+
+    main-bg p {
+        text-align: center;
+    }
+
     .card-single {
         width: 100%;
     }
@@ -326,6 +370,13 @@ div.group-icons a{
     .equipe-container{
         width: 100%;
     }
+    section.sobre-equipe{
+        text-align: center;
+    }
+
+    .descricao-avatar{
+        text-align: left ;
+    }
     .sobre-container {
         width: 100%;
         margin-top: 60px;
@@ -333,7 +384,29 @@ div.group-icons a{
 }
 
 @media screen and (max-width:500px){
+
+    nav.menu-desktop{display: none;}
+
+    nav.menu-mobile{
+        display: block;
+    }
+    nav.menu-desktop{display: none;}
+
+    nav.menu-mobile{
+        display: block;
+    }
+
+    main-bg p {
+        text-align: center;
+    }
+    
     .card-single {
         padding: 10px;
+    }
+    section.sobre-equipe{
+        text-align: center;
+    }
+    .descricao-avatar{
+        text-align: left ;
     }
 }
