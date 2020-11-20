@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="/styles/reset.css">-->
+    <link rel="stylesheet" href="/styles/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo"><a href="/index.html"><h1>Art Designer</h1></a></div>
+        <nav class="menu-desktop">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="menu-mobile">
+            <h2><i class="fa fa-bars"></i></h2>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </div>
+</header>
+<section style="background-image: url('img/bg2.jpg');" class="title-page">
+    <div class="overlay--title-page"></div>
+    <div class="container">
+        <h2>Contato</h2>
+        <p>Quis non ad mollit duis lore ipsum colupte. Ea adipisicing mollit do minim anim exercitation incididunt magna. Est qui nulla minim do labore adipisicing minim ipsum nulla excepteur. Est aliquip irure cillum non ut et.</p>
+    </div>
+</section>
+<section class="contato">
+    <div class="container">
+        <div class="w60 formulario">
+            <h2>Entre em contato que estaremos respondendo o mais breve possível!</h2>
+            <form method="post">
+                <div class="w50">
+                    <input placeholder="Nome..." type="text" required />
+                </div>
+                <div class="w50">
+                    <input placeholder="Sobrenome..." type="text" required />
+                </div>
+                <div class="w100">
+                    <input placeholder="E-mail" type="email" required />
+                </div>
+                <div class="w100">
+                    <textarea placeholder="Sua mensagem..."></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="w40 tags-form">
+            <h2><i class="fa fa-comment"></i> Fale com a nossa equipe!</h2>
+            <p>Commodo enim duis veniam laborum dolore nostrud cupidatat deserunt.</p>
+
+            <p class="tag-contato"><i class="fa fa-facebook"></i> /dankicode</p>
+            <p class="tag-contato"><i class="fa fa-facebook"></i> /dankicode</p>
+            <p class="tag-contato"><i class="fa fa-facebook"></i> /dankicode</p>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</section>
+<footer class="footer1">
+    <div class="container">
+        <div class="w33">
+            <h2>Aonde estamos?</h2>
+            <p><i class="fa fa-map-pin" aria-hidden="true"></i>  R. Fulano da silva, Coqueiros, Floripa/SC</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>  (48) 9999-9999</p>
+        </div>
+        <div class="w33">
+            <h2>Links Úteis</h2>
+            <a href="https://dankicode.com">Danki Code</a>
+            <a href="https://www.w3schools.com">W3Schools</a>
+        </div>
+        <div class="w33">
+            <h2>Conecte-se conosco</h2>
+            <div class="group-icons">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer>
+<footer class="footer2">
+    <div class="container">
+        <p>Todos os Direitos Reservados Hebert Montarroyos</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    $('nav.menu-mobile h2').click(function(){
+        $('nav.menu-mobile ul').slideToggle();
+    });
+</script>
+</body>
+</html>

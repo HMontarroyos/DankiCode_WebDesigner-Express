@@ -4,17 +4,30 @@
     border: 0;
     box-sizing: border-box;
 }
-
+/* Classes Auxiliares */
 .container{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2%;
     font-family: 'Open Sans Condensed', sans-serif;
 }
+.w60{
+    width: 60%;
+    float: left;
+}
 
+.w40{
+    width: 40%;
+    float: left;
+}
 .w50{
     width: 50%;
     float: left;
+}
+
+.w33{
+    float: left;
+    width: 33.3%;
 }
 .center{text-align: center;}
 
@@ -347,10 +360,7 @@ div.group-icons a{
     margin:15px 10px ;
 }
 
-.w33{
-    float: left;
-    width: 33.3%;
-}
+
 
 /* Sobre */
 
@@ -532,11 +542,100 @@ section.sobre__final p {
     font-weight: normal;
 }
 
+section.contato {
+    min-height: 600px;
+    padding: 30px 0;
+}
+
+section.contato .w50,
+section.contato .w100{
+   padding: 0 10px ;
+}
+
+.formulario form{
+    margin-top: 10px;
+}
+
+.formulario h2{
+    background: #DDDDDD;
+    text-align: center;
+    color: #ACAC9D;
+    font-size: 17px;
+    font-weight: normal;
+    border-left: 5px solid #CCCCCC;
+    padding: 4px 0;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-left: 8px;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 350px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding:10px;
+    resize: none;
+}
+
+.tags-form{
+    padding-left: 50px;
+}
+
+.tags-form h2 {
+    font-weight: normal;
+}
+
+.tags-form p {
+    font-weight: lighter;
+}
+
+.tags-form p.tag-contato{
+    color: white;
+    background: #48D1CC;
+    text-align: center;
+    margin-top: 8px;
+    padding: 8px 4px;
+    transition: 0.5s;
+}
+
+.tags-form p.tag-contato:hover{
+    color: white;
+    background: orange;
+    text-align: center;
+    margin-top: 8px;
+    padding: 20px 4px;
+}
+
+
+
 
 
 /*RESPONSIVIDADE*/
+
+@media screen and (max-width:1080px){
+    section.contato {
+        min-height: 0px;
+    }
+}
 @media screen and (max-width:700px){
 
+    .tags-form{
+        padding-left: 0px;
+    }
+    .formulario input[type=text],
+    .formulario input[type=email]{
+        margin-bottom: 0px;
+    }
+.formulario textarea{
+    margin-bottom: 0px;
+}
     main-bg p {
         text-align: center;
     }
@@ -545,7 +644,7 @@ section.sobre__final p {
         width: 100%;
     }
 
-    .w50,.w33{width: 100%; margin-bottom: 20px;}
+    .w50,.w33,.w40,.w60,.w100{width: 100%; margin-bottom: 20px;}
 
     footer.footer1{
         text-align: center;
